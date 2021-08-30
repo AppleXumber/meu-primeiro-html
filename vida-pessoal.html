@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Vida Pessoal | Página do Wayron</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="imagens/favicon.ico"/>
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<a href="index.html"><img src="imagens/logo.jpeg" class="logo"></a>
+				<div class="botao-modo-escuro">
+					<div class="container">
+						<input id="night-mode" class="selecionador" type="checkbox" aria-label="night-mode"/>
+						<label for="night-mode" class="label-night-mode">Modo escuro</label>
+					</div>				
+					<script>
+						const nightModeStorage = localStorage.getItem('gmtNightMode')
+						const nightMode = document.querySelector('#night-mode')
+						if (nightModeStorage) {
+						  document.documentElement.classList.add('nightMode')
+						  nightMode.checked = true
+						}
+						nightMode.addEventListener('click', () => {
+						  document.documentElement.classList.toggle('nightMode')
+						  if (document.documentElement.classList.contains('nightMode')) {
+						    localStorage.setItem('gmtNightMode', true)
+						    return
+						  }
+						  localStorage.removeItem('gmtNightMode')
+						})					
+					</script>
+				</div>
+			</div class="container">
+		</header>
+		<main>
+
+			<section class="vida-pessoal">
+				<h4 class="titulo-principal">Vida pessoal</h4>		
+				</div>
+				<div class="hobbies">
+					<p class="semi-titulo">Hobbies</p>
+					<p>Gosto de aprender programação no meu tempo livre.<br>Gosto de jogar também, Minecraft é um dos meus jogos favoritos. Gosto de um estilo de jogo chamado Grand Strategy Games, principalmente de uma empresa chamada Paradox, Victoria II, Europa Universalis 4, Crusader Kings 3 e Hearts of Iron 4 são jogos que eu gosto e acompanho, apesar de apenas jogar Victoria II, já que é o unico jogo que roda no meu computador.</p>
+				</div>
+
+				<div class="gostos-e-preferências">
+					<p class="semi-titulo">Gostos e Preferências</p>
+					<div class="container">					
+						<p class="gostos">Na questão de músicas, gosto de Hard Rock e Power Metal: Sabaton, System of a Down, Killswitch Engage e Rammstein são as minhas bandas preferidas. Mas apesar disso, gosto de coisas mais variadas, como um rap e até musicas patrióticas.</p>
+						<div class="musica">
+							<iframe src="https://open.spotify.com/embed/track/3a9urnht8HvfFzPwd0ipx6" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media" class="tocador-spotify"></iframe>
+						</div>			
+					</div>
+				</div>
+			</section>
+
+			<section class="redes-sociais">
+						<div class="redes-sociais-titulo">
+							<p class="semi-titulo">Redes Sociais</p>
+						</div>
+					<div class="container">
+						<div class="container-logos">
+							<a href="https://www.twitch.tv/applexumber" target="_blank" class="logos"><img src="imagens/twitch-logo.jpeg" class="logo-redes-sociais">Twitch</a>
+
+							<a href="https://twitter.com/WayronXumber" target="_blank" class="logos"><img src="imagens/twitter-logo.png" class="logo-redes-sociais">Twitter</a>
+
+							<a href="https://www.instagram.com/wayrondesouza/" target="_blank" class="logos"><img src="imagens/instagram-logo.png" class="logo-redes-sociais">Instagram</a>
+
+							<a href="https://www.facebook.com/wayron.jhonnydesousa/" target="_blank" class="logos"><img src="imagens/facebook-logo.png" class="logo-redes-sociais">Facebook</a>
+						</div>
+					</div>
+			</section>
+
+			<section class="vida-pessoal">
+				<div class="religiao">							
+						<p class="semi-titulo">Religião</p>
+						<div class="container">					
+							<div class="religiao-texto">
+								<p>Sou adepto ao gatolicismo. Sou gateiro, adoro gatos <br>Tenho 2 gatos hoje em dia, uma gata ranzinza mais velha que tem 6+ anos, e mais um gato que tem 2 anos que eu sou mais ligado</p>
+							</div>
+							<div class="div-foto-gato">
+								<img src="imagens/gato.jpeg" class="foto-gato" alt="Foto do meu gato">
+								<p>Meu gatinho</p><p>Mais novo, tem 2 anos</p>
+							</div>
+					</div>
+				</div>
+
+				<div class="informacoes-inuteis">
+					<p class="semi-titulo"> Compilado de informações Inúteis</p>
+					<ul>
+						<li><p class="paragrafos-listas">MBTI: INTJ</p></li>
+						<li><p class="paragrafos-listas">Cor favorita: roxo</p></li>
+						<li><p class="paragrafos-listas">Altura: 1.7*m</p></li>
+						<li><p class="paragrafos-listas">Signo: dinossauro</p></li>
+					</ul>				
+				</div>			
+			</section>
+
+			<div class="nav-index-rodape">
+				<div class="container">
+					<a href="index.html" class="botao">Voltar</a>
+				</div>	
+			</div>
+
+		</main>
+		<footer>
+			<div class="container">
+				<img src="imagens/logo.jpeg" class="logo-footer">
+				<p class="paragrafos-footer">&copy; Copyright AppleXumber - 2021</p>
+			</div class="container">
+		</footer>
+		
+	</body>

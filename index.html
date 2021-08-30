@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Página do Wayron</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="imagens/favicon.ico"/>	
+	</head>
+	<body>
+		
+		<header>
+			<div class="container">
+				<a href="index.html"><img src="imagens/logo.jpeg" class="logo"></a>
+				<div class="botao-modo-escuro">
+					<div class="container">
+						<input id="night-mode" class="selecionador" type="checkbox" aria-label="night-mode"/>
+						<label for="night-mode" class="label-night-mode">Modo escuro</label>
+					</div>				
+					<script>
+						const nightModeStorage = localStorage.getItem('gmtNightMode')
+						const nightMode = document.querySelector('#night-mode')
+						if (nightModeStorage) {
+						  document.documentElement.classList.add('nightMode')
+						  nightMode.checked = true
+						}
+						nightMode.addEventListener('click', () => {
+						  document.documentElement.classList.toggle('nightMode')
+						  if (document.documentElement.classList.contains('nightMode')) {
+						    localStorage.setItem('gmtNightMode', true)
+						    return
+						  }
+						  localStorage.removeItem('gmtNightMode')
+						})
+					</script>
+				</div>
+			</div class="container">
+		</header>
+		<main>
+			
+
+
+			<section class="introducao">
+				<h1 class="titulo-principal">Introdução</h1>
+				<div class="container">
+					<p class="apresentacao">Wayron ***** de Souza nasceu no dia 11 de Janeiro de 20**, em Curitiba.</p>
+					<p class="apresentacao">Tem o objetivo de trabalhar com programação, e no futuro ser um grande profissional da area.</p>
+					<p class="apresentacao">Sem um objetivo em qual area da programação irá atuar, mas sempre buscando estudar e aprender mais sobre o assunto.</p>
+					<p class="apresentacao">Tenho conhecimento em <a href="https://www.python.org/" target="_blank" class="links">Python</a>, <a href="https://www.javascript.com/" target="_blank" class="links">JavaScript</a> e <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" class="links">HTML</a> e <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank" class="links">CSS</a>, mas sempre estudando mais linguagens e adquirindo conhecimento sobre o assunto.</p>
+				</div>
+				
+			</section>
+
+			<section class="nav-section">
+				<nav class="nav-sites">
+					<div class="lista-nav">
+							<a href="curriculo.html" class="nav-sites-link">Currículo</a>
+							<a href="vida-pessoal.html" class="nav-sites-link">Vida Pessoal</a>
+					</div>
+				</nav>
+			</section>
+
+		</main>
+		<footer>
+			<div class="container">
+				<img src="imagens/logo.jpeg" class="logo-footer">
+				<p class="paragrafos-footer">&copy; Copyright AppleXumber - 2021</p>
+			</div class="container">
+		</footer>
+	</body>
+
+</html>

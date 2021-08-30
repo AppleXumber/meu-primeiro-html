@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Curricúlo | Página do Wayron</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="imagens/favicon.ico"/>
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="index.html"><img src="imagens/logo.jpeg" class="logo"></a>
+				<div class="botao-modo-escuro">
+					<div class="container">
+						<input id="night-mode" class="selecionador" type="checkbox" aria-label="night-mode"/>
+						<label for="night-mode" class="label-night-mode">Modo escuro</label>
+					</div>				
+					<script>
+						const nightModeStorage = localStorage.getItem('gmtNightMode')
+						const nightMode = document.querySelector('#night-mode')
+						if (nightModeStorage) {
+						  document.documentElement.classList.add('nightMode')
+						  nightMode.checked = true
+						}
+						nightMode.addEventListener('click', () => {
+						  document.documentElement.classList.toggle('nightMode')
+						  if (document.documentElement.classList.contains('nightMode')) {
+						    localStorage.setItem('gmtNightMode', true)
+						    return
+						  }
+						  localStorage.removeItem('gmtNightMode')
+						})					
+					</script>
+				</div>
+			</div class="container">
+		</header>
+		<main>
+
+			<section class="curriculo">
+				<h2 class="titulo-principal">Currículo</h2>
+				<div class="lista-curriculo">
+					<ul>
+						<p class="paragrafos-listas">Não tenho experiência profissional comprovada posteriormente, porém tenho certas habilidades e qualidades interessantes.</p>
+						<li>
+							<p class="semi-titulo">Inglês</p>
+							<p class="paragrafos-listas">Tenho um Inglês intermediário: nunca tive nenhum estudo sobre a língua sem ser na escola, porém, acompanho muito o mundo estrangeiro, e hoje no mundo, ele exige que você tenha um conhecimento básico da lingua. Consigo conversar em Inglês, com dificuldade de falar e escrever, porém entendo o que é falado e escrito.</p>
+						</li>
+						<li>
+							<p class="semi-titulo">Computadores</p>
+							<p class="paragrafos-listas">Sei montar, desmontar e reparar computadores. Além, consigo formatar e instalar drivers necessários.</p>
+						</li> 
+						<li>
+							<p class="semi-titulo">Programação</p>
+							<p class="paragrafos-listas">Tenho conhecimento em Python, adquirido durante um curso online em dezembro de 2020 no <a href="https://www.cursoemvideo.com/" target="_blank" class="links">Curso em Vídeo<a>, gratuíto e disponível no Youtube. Este curso foi o que me introduziu ao mundo da programação, e comecei a aprender a partir daí.</p>
+							<p class="paragrafos-listas">Conhecimento em JavaScript, adiquirido durante um curso online em Maio de 2021, pela <a href="https://www.alura.com.br" target="_blank" class="links">Alura</a>. Este curso foi concedido por uma parceria entre a SEED-PR e a Alura.</p>
+							<p class="paragrafos-listas">Conhecimento em HTML e CSS, adiquirido durante um curso online em Junho de 2021, pela <a href="https://www.alura.com.br" target="_blank" class="links">Alura</a>. Mesmo contexto em que aprendi JavaScript.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="qualidades-curriculo">
+					<h3 class="semi-titulo">Qualidades</h3>
+					<p class="paragrafos-listas">Sou uma pessoa organizada, gosto de ambiêntes organizados e limpos, cada coisa em seu devido lugar.</p>
+					<p class="paragrafos-listas">Se for me dado tempo e espaço, sou uma pessoa bem consistente, consigo com concentração cumprir objetivos e metas.</p>
+					<p class="paragrafos-listas">Aprendizado rápido: consigo aprender e absolver novos conteúdos e conhecimentos de maneira mais rápida.</p>
+				</div>
+				<div class="dados-pessoais">	
+						<h4 class="semi-titulo">Dados pessoais</h4>
+						<div class="container">					
+							<div class="dados-pessoais-dados">
+								<p class="paragrafos-listas">Data de nascimento: 11/01/20**</p>
+								<p class="paragrafos-listas">Cidade de nascimento: Curitiba-PR</p>
+								<p class="paragrafos-listas">Escolaridade: ******* (cursando)</p>
+								<p class="paragrafos-listas">Endereço: ***** **** **, ***</p>
+								<p class="paragrafos-listas">Estado Civíl: Solteiro</p>
+								<p class="paragrafos-listas">Email: ******.******@gmail.com</p>
+								<p class="paragrafos-listas">Número de telefone: (**) *****-****</p>
+							</div>
+						<div class="div-foto-curriculo">
+						<img src="imagens/foto_currículo.png" class="foto-curriculo" alt="foto 3x4 currículo">
+						</div>
+					</div>					
+				</div>	
+			</section>
+
+			<div class="nav-index-rodape">
+				<div class="container">
+					<a href="index.html" class="botao">Voltar</a>
+				</div>	
+			</div>
+
+		</main>
+		<footer>
+			<div class="container">
+				<img src="imagens/logo.jpeg" class="logo-footer">
+				<p class="paragrafos-footer">&copy; Copyright AppleXumber - 2021</p>
+			</div class="container">
+		</footer>
+		
+	</body>

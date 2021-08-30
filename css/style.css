@@ -1,0 +1,491 @@
+html {
+}
+
+body {
+	font-family: sans-serif;
+}
+
+header {
+	width: 100%;
+	background: #000000;
+}
+
+header .container {
+	display: flex;
+	width: 90%;
+	margin: 0px auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: 10em;
+	height: 10em;
+	margin-left: 4em;
+}
+
+.selecionador {
+	display: flex;
+	margin: 1em 0em;
+}
+
+.botao-modo-escuro .container {
+	display: flex;
+	align-items: center;
+	background: #CCCCCC;
+	border: solid 4px #000000;
+	border-radius: 5px;
+	padding: 0rem 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+main {
+	background: linear-gradient(90deg, #DDDDDD 1%, #f5f0ff 5%, #f5f0ff 95%, #DDDDDD 99%);
+}
+
+.introducao, .curriculo, .vida-pessoal {
+	padding: 1em 1em;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.titulo-principal {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.apresentacao {
+	display: block;
+	margin: 0.3em 0;
+	font-size: 18px;
+}
+
+/*Navegação*/
+
+.nav-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-sites {
+	text-align: center;
+	width: 75%;
+}
+
+.lista-nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-sites-link {
+	border: solid 4px #000000;
+	border-radius: 5px;
+	color: #000000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 1em 0;
+	margin: 3em 0;
+	transition: 250ms;
+	background: #ebebeb;
+}
+
+.nav-sites-link:hover {
+	transform: scale(1.1);
+	color: #570a92;
+	border: solid 4px #570a92;
+	background: #e0e0e0;
+}
+
+/*Area Currículo*/
+
+.links {
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;	
+}
+
+.links:hover {
+	color: #570a92;
+	text-decoration: underline;
+}
+
+.dados-pessoais .container {
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	justify-content: space-between;
+	
+}
+
+.div-foto-curriculo {
+	border: 3px solid black;
+	border-radius: 4px;
+	padding: 0.55%;
+}
+
+.dados-pessoais-dados {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1em;
+}
+
+.dados-pessoais .paragrafos-listas {
+	margin: 0 0 0.2em 1em;
+}
+
+.foto-curriculo {
+	width: 150px;
+	height: 200px;
+	float: right;	
+	transition: all 250ms;
+}
+
+.foto-curriculo:hover {
+	transform: scale(1.067);
+	box-shadow: 5px 5px 5px 0 #000000;
+}
+
+.semi-titulo {
+	font-weight: bold;
+	font-size: 1.1em;
+	margin: 1em 0 0 0;
+}
+
+.semi-titulo:before {
+	content: "✶";
+}
+
+.paragrafos-listas {
+	margin: 0em 0em 0.7em 1em;
+}
+
+.paragrafos-listas:before {
+	content: "⇾ ";
+}
+
+.qualidades-curriculo {
+	margin: 1em 0 0 0;
+}
+
+/*Area Vida pessoal*/
+
+.gostos-e-preferências {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.gostos-e-preferências .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.gostos {
+	box-sizing: border-box;
+	display: flex;
+	width: 60%;
+}
+
+.gostos:before {
+	content: "⇾ ";
+}
+
+.gostos strong {
+	font-weight: bold;
+}
+
+
+.musica {
+	width: 40%;
+}
+
+.tocador-spotify {
+	display: flex;
+}
+
+.redes-sociais-titulo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+.redes-sociais .container {
+	background: #78a0c8;
+	margin-top: 1rem;
+}
+
+.container-logos {
+	display: flex;
+    width: 85%;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 10rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.logos {
+	display: flex;
+	align-items: center;
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #989898;
+	border: solid 5px #000000;
+	border-radius: 1rem;
+	padding: 0 1rem;
+	justify-content: space-between;
+	width: 10rem;
+	transition: 250ms;
+}
+
+.logos:hover {
+	transform: scale(1.1);
+	box-shadow: 5px 5px 5px 0 #000000;
+}
+
+.logo-redes-sociais {
+	width: 64px;
+	height: 64px;
+}
+
+
+
+.religiao {
+	
+}
+
+.religiao .container {
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	justify-content: space-between;
+}
+
+.religiao-texto {
+	display: flex;
+	width: 75%;
+	margin-top: 1em;
+}
+
+.div-foto-gato {
+	float: right;
+	width: 120px;
+	height: 200px;
+	border: 3px solid black;
+	border-radius: 5px;
+	transition: all 250ms;
+}
+
+.div-foto-gato:hover {
+	transform: scale(1.1);
+	box-shadow: 5px 5px 5px 0 #000000;
+}
+
+.div-foto-gato p {
+	margin-top: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.foto-gato {
+	float: right;
+	width: 120px;
+	height: 136px;
+	margin-bottom: 5px;
+	transition: all 250ms;
+}
+
+/*Area footer*/
+
+.nav-index-rodape {
+	margin: 0 auto;
+	display: flex;
+	width: 940px;
+	justify-content: flex-end;
+}
+
+.nav-index-rodape .container {
+	margin: 1em 0em;
+}
+
+.botao {
+	display: flex;
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+	align-items: center;
+	padding: 0.5em 0.5em;
+	background: #ebebeb;
+	border: solid 2px #000000;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: 150ms;
+}
+
+.botao:hover {
+	transform: scale(1.1);
+	color: #570a92;
+	border: solid 4px #570a92;
+	background: #e0e0e0;
+}
+
+footer {
+	text-align: center;
+}
+
+footer .container {
+	width: 100%;
+	background: #000000;
+	align-items: center;
+	padding: 2em 0;
+}
+
+.logo-footer {
+	width: 10em;
+	height: 10em;
+}
+
+.paragrafos-footer {
+	color: #FFFFFF;
+	text-align: center;
+}
+
+/*!-Modo escuro-!*/
+
+.nightMode main {
+	background: #2b2b2b;
+	color: #d2cccc;
+}
+
+.nightMode .nav-sites-link, .nightMode .botao, .nightMode .logos {
+	background: #2b2b2b;
+	color: #d2cccc;
+	border-color: #131313;
+}
+
+.nightMode .nav-sites-link:hover, .nightMode .botao:hover {
+	color: #7537d8;
+	border-color: #7537d8;
+	background: #3e3d3d;
+}
+
+.nightMode .links {
+	color: #efefef;
+}
+
+.nightMode .links:hover {
+	color: #7537d8;
+}
+
+.nightMode .redes-sociais .container {
+	background: #445d75;
+}
+
+/*!--Mobile--!*/
+
+@media only screen and (max-width: 550px) {
+	/*Index*/
+	header .container {
+		display: flex;
+		margin: 0 auto;
+		flex-direction: column;
+	}
+
+	.logo {
+		height: 20em;
+		width: 100%;
+		margin-left: 0em;
+	}
+
+	main {
+		padding-top: 2rem;
+	}
+
+	.introducao, .curriculo, .vida-pessoal {
+		width: 90%
+	}
+
+	.titulo-principal {
+		font-size: 40px;
+		}
+
+	.introducao .container {
+		margin-top: 3em;
+	}
+
+	.apresentacao {
+		font-size: 20px;
+	}
+
+	.nav-sites {
+		width: 90%;
+	}
+
+	.nav-sites-link {
+		font-size: 20px;
+		margin: 2em 0;
+	}
+
+	/*Currículo*/
+
+	.curriculo {
+		font-size: 20px;
+	}
+
+	.dados-pessoais-dados {
+		margin: 1rem 0;
+	}
+
+	.dados-pessoais .container {
+		flex-direction: column;
+	}
+
+	.div-foto-curriculo {
+		margin: 0 auto;
+	}
+
+	/*Vida pessoal*/
+
+	.gostos-e-preferências {
+		width: 100%;
+	}
+
+	.gostos-e-preferências .container {
+		flex-direction: column;
+	}
+
+	.container-logos {
+		height: auto;
+	}
+
+	.logos {
+		margin: 1rem 0rem;
+	}
+
+	.musica {
+		width: 100%;
+		margin: 2rem 0;
+	}
+
+	.gostos {
+		width: 90%;
+	}
+
+	 .redes-sociais-titulo {
+	 	width: 90%;
+	 	margin: 0 auto;
+	 }
+
+	/*Rodapé*/
+
+	.nav-index-rodape {
+		width: 90%;
+	}
+}
